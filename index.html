@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="A user-friendly Student Registration System for managing student details such as name, ID, email, and contact number.">
+    <!--  using meta add web descripition  -->
+    <meta name="description" content="A user-friendly Student Registration System for managing student details such as name, ID, email, and contact number.">
+   <!-- using meta define keyword to easy  serching -->
     <meta name="keywords" content="Student Registration, Education System, Student Database, School Management">
+    <!-- add auther deatile -->
     <meta name="author" content="Shashank">
     <title>Student Registration System</title>
+    <!-- font-Awesom CDN add -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- external styling Add -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +24,7 @@
     <h1><i class="fas fa-user-graduate"></i> Student Registration System</h1>
     <p>A smart web application to manage student records — easily add, update, and delete student details with just a few clicks.</p>
 </header>
+        <!-- header section end -->
 <!-- form section  start-->
         <section class="registration-form">
             <form id="studentForm">
@@ -43,7 +50,8 @@
                 <button type="submit">Add Student</button>
             </form>
         </section>
-
+        <!-- form section end -->
+<!-- Student table section start -->
         <section class="students-table">
             <table>
                 <thead>
@@ -58,10 +66,17 @@
                 <tbody id="studentList"></tbody>
             </table>
         </section>
+        <!-- Student table section end -->
+<!-- Footer start -->
+
         <footer>
     <p>&copy; 2025 Student Registration System. All rights reserved.</p>
 </footer>
+<!-- Footer end -->
+
     </div>
+    <!-- main container end -->
+    <!-- JavaScript file -->
     <script src="app.js">
          </script>
 </body>

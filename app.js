@@ -59,7 +59,7 @@
                 return false;
             }
             // Check if the contact number is 10 digits long
-             if (!student.contact.leanth > 10 || student.contact.length < 10) {
+             if (student.contact.length !== 10) {
                 alert('Contact number should be 10 digits long');
                 return false;
             }
