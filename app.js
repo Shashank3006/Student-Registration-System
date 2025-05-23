@@ -1,6 +1,7 @@
       
       //declare variables localStorage its used to store data like dummy data base
       let students = JSON.parse(localStorage.getItem('students')) || [];
+      //declear variable edit index its help when we edit the datd
         let editIndex = null;
 
         // Initialize  event listeners
@@ -23,6 +24,7 @@
             };
 //check if the student object is valid
             if (validateStudent(student)) {
+                //check if index valeue not null the will work other then else condition will be work
                 if (editIndex !== null) {
                     students[editIndex] = student;
                     editIndex = null;
@@ -99,7 +101,8 @@
                 renderStudents();
             }
         }
-// This function populates the form with the data of the student to be edited
+// This function work edit tha data,
+//using index data fill to the form and perfome tast to edit after that save 
         function editStudent(index) {
             const student = students[index];
             document.getElementById('name').value = student.name;
